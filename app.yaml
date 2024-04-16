@@ -1,0 +1,16 @@
+runtime: python27
+env: standard
+
+api_version: 1
+threadsafe: true
+
+runtime_config:
+  python_version: 2.7
+
+handlers:
+- url: /.*
+  script: main.app
+
+libraries:
+- name: webapp2
+  version: "2.5.2"
